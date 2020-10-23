@@ -9,7 +9,7 @@ Finally `Flutter run`</br>
 First get information from an API in GraphQl; </br>
 Convert to a model; </br>
 Cubit as state management issues a notification that the state has been updated; </br>
-Card receives the status of the model and updates the screen; </br>
+Card receives the state of the model and updates the screen; </br>
 
 ### Packages:
     -   graphql: 3.0.0
