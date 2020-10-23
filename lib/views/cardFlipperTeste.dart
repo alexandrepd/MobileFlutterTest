@@ -104,7 +104,7 @@ class CardFlipperTest extends StatelessWidget {
             style: _styleGray(19.0),
           )),
           Text(
-            profitability.toString().substring(0, 5).replaceAll(".", ","),
+            profitability.toString().substring(0, 5).replaceAll(".", ",") + "%",
             style: _styleBlue(20.0),
           ),
         ],
@@ -123,7 +123,7 @@ class CardFlipperTest extends StatelessWidget {
             style: _styleGray(19.0),
           )),
           Text(
-            cdi.toString().substring(0, 4).replaceAll(".", ","),
+            cdi.toString().substring(0, 4).replaceAll(".", ",") + "%",
             style: _styleBlue(20.0),
           ),
         ],
