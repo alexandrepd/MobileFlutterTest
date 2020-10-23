@@ -17,4 +17,4 @@ Card receives the state of the model and updates the screen; </br>
     -   flutter_bloc: 6.0.6
     -   intl: 0.16.1
 
-![App Screen](/lib/assets/images/FlipperTeste.png)
+![App Screen](/lib/assets/images/MobileTeste.png)
