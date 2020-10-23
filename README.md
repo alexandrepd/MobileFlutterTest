@@ -1,5 +1,5 @@
 # MobileFlutterTest
-Buscar informações de uma API em GraphQl;
+Buscar informações de uma API em GraphQl;</br>
 Converter para um model;
 
 Cubit como gerenciamento de estado emite uma notificação que o estado foi atualizado;
