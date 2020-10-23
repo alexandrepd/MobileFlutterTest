@@ -1,4 +1,4 @@
-import 'package:MobileFlutterTest/modules/repository/wealthSummaryRepository.dart';
+import 'package:MobileFlutterTest/modules/repository/summaryRepository.dart';
 import 'package:MobileFlutterTest/views/cardFlipperTeste.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: BlocProvider(
-        create: (BuildContext context) =>
-            SummaryCubit(WealthSummaryRepository()),
+        create: (BuildContext context) => SummaryCubit(SummaryRepository()),
         child: _getHome(),
       ),
     );

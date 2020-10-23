@@ -1,12 +1,24 @@
-class WealthSummaryModel {
+class SummaryModel {
   int id;
   bool hasHistory;
   double gain;
   double cdi;
   double profitability;
   int total;
+  static String querySummary = r'''
+  query summary {
+  wealthSummary {
+    id
+    hasHistory
+    gain
+    cdi
+    profitability
+    total
+  }
+}
+''';
 
-  WealthSummaryModel(
+  SummaryModel(
       {this.id,
       this.hasHistory,
       this.gain,
@@ -14,7 +26,7 @@ class WealthSummaryModel {
       this.profitability,
       this.total});
 
-  WealthSummaryModel.fromJson(Map<String, dynamic> json) {
+  SummaryModel.fromJson(Map<String, dynamic> json) {
     id = json["wealthSummary"][0]['id'];
     hasHistory = json["wealthSummary"][0]['hasHistory'];
     gain = json["wealthSummary"][0]['gain'];

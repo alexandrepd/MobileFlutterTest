@@ -1,12 +1,12 @@
-import 'package:MobileFlutterTest/modules/model/wealthSummaryModel.dart';
-import 'package:MobileFlutterTest/modules/repository/wealthSummaryRepository.dart';
+import 'package:MobileFlutterTest/modules/model/summaryModel.dart';
+import 'package:MobileFlutterTest/modules/repository/summaryRepository.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 
 part 'summary_state.dart';
 
 class SummaryCubit extends Cubit<SummaryState> {
-  final WealthSummaryRepository _repository;
+  final SummaryRepository _repository;
   SummaryCubit(this._repository) : super(SummaryInitial());
 
   Future<void> getSummary() async {

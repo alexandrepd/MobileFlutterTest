@@ -14,7 +14,7 @@ class SummaryLoading extends SummaryState {
 }
 
 class SummaryLoaded extends SummaryState {
-  final WealthSummaryModel summary;
+  final SummaryModel summary;
   const SummaryLoaded(this.summary);
 
   @override

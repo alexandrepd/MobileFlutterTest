@@ -1,4 +1,4 @@
-import 'package:MobileFlutterTest/modules/model/wealthSummaryModel.dart';
+import 'package:MobileFlutterTest/modules/model/summaryModel.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -8,7 +8,7 @@ const colorWhite = Color.fromRGBO(255, 255, 255, 1);
 const colorGray = Color.fromRGBO(96, 99, 119, 1);
 
 class CardFlipperTest extends StatelessWidget {
-  final WealthSummaryModel summary;
+  final SummaryModel summary;
 
   const CardFlipperTest({Key key, this.summary}) : super(key: key);
   @override
