@@ -1,9 +1,8 @@
 # MobileFlutterTest
 Buscar informações de uma API em GraphQl;</br>
-Converter para um model;
-
-Cubit como gerenciamento de estado emite uma notificação que o estado foi atualizado;
-Card recebe o estado do model e atualiza a tela;
+Converter para um model;</br>
+Cubit como gerenciamento de estado emite uma notificação que o estado foi atualizado;</br>
+Card recebe o estado do model e atualiza a tela;</br>
 
 ### Pacotes utilizados:
     -   graphql: 3.0.0
