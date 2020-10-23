@@ -1,6 +1,7 @@
 import 'package:MobileFlutterTest/modules/model/wealthSummaryModel.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 const colorBlue = Color.fromRGBO(59, 92, 184, 1);
 const colorWhite = Color.fromRGBO(255, 255, 255, 1);
@@ -85,7 +86,7 @@ class CardFlipperTest extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10.0, 9.0, 10.0, 30.0),
       child: Center(
         child: Text(
-          "R\$ $total",
+          "R\$ " + _numberFormat('###,###.00', total),
           style: _styleBlue(22.0),
         ),
       ),
@@ -103,7 +104,7 @@ class CardFlipperTest extends StatelessWidget {
             style: _styleGray(19.0),
           )),
           Text(
-            "$profitability%",
+            profitability.toString().substring(0, 5).replaceAll(".", ","),
             style: _styleBlue(20.0),
           ),
         ],
@@ -122,7 +123,7 @@ class CardFlipperTest extends StatelessWidget {
             style: _styleGray(19.0),
           )),
           Text(
-            "$cdi%",
+            cdi.toString().substring(0, 4).replaceAll(".", ","),
             style: _styleBlue(20.0),
           ),
         ],
@@ -141,7 +142,7 @@ class CardFlipperTest extends StatelessWidget {
             style: _styleGray(19.0),
           )),
           Text(
-            "R\$ $gain",
+            "R\$ " + _numberFormat("####.00", gain),
             style: _styleBlue(20.0),
           ),
         ],
@@ -184,5 +185,10 @@ class CardFlipperTest extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  String _numberFormat(String pattern, dynamic valor) {
+    var out = NumberFormat(pattern, "pt_BR");
+    return out.format(valor);
   }
 }
