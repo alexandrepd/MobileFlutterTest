@@ -1,7 +1,7 @@
 # MobileFlutterTest
 ### Getting Started
 
-    Install all the dependencies running ```flutter packages get```
+    Install all the dependencies running ```Dart flutter packages get```
     Open env.dart file and replace endpoint and secret to the real endpoint and secret.
     ```Flutter run
 
