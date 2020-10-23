@@ -1,10 +1,10 @@
+import 'package:MobileFlutterTest/env.dart';
 import 'package:MobileFlutterTest/modules/base/defaultModel.dart';
 import 'package:graphql/client.dart';
 
 class BaseProvider {
-  final String _token = "fliperdevtest2020";
-  final String _endpoint =
-      "https://harura-fliper-test.herokuapp.com/v1/graphql";
+  final String _token = environment['secret'];
+  final String _endpoint = environment['endpoint'];
 
   Future<DefaultModel<T>> readGraphQl<T>(
       String query, T Function(dynamic readGraph) callback) async {
