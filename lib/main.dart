@@ -40,12 +40,15 @@ class MyApp extends StatelessWidget {
         return _loadingWidget();
       }
       if (state is SummaryLoaded) {
-        return Column(
-          children: <Widget>[
-            Expanded(child: Container()),
-            CardFlipperTest(summary: state.summary),
-            Expanded(child: Container()),
-          ],
+        return Container(
+          color: Color.fromRGBO(232, 235, 246, 1),
+          child: Column(
+            children: <Widget>[
+              Expanded(child: Container()),
+              CardFlipperTest(summary: state.summary),
+              Expanded(child: Container()),
+            ],
+          ),
         );
       }
 
