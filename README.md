@@ -1,4 +1,10 @@
 # MobileFlutterTest
+### Getting Started
+
+    Install all the dependencies running ```flutter packages get```
+    Open env.dart file and replace endpoint and secret to the real endpoint and secret.
+    ```Flutter run
+
 Buscar informações de uma API em GraphQl;</br>
 Converter para um model;</br>
 Cubit como gerenciamento de estado emite uma notificação que o estado foi atualizado;</br>
