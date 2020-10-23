@@ -11,7 +11,7 @@ Convert to a model; </br>
 Cubit as state management issues a notification that the state has been updated; </br>
 Card receives the status of the model and updates the screen; </br>
 
-### Pacotes utilizados:
+### Packages:
     -   graphql: 3.0.0
     -   bloc: 6.1.0
     -   flutter_bloc: 6.0.6
