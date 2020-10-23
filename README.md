@@ -1,5 +1,6 @@
 # MobileFlutterTest
 Buscar informações de uma API em GraphQl;
+
 Converter para um model;
 Cubit como gerenciamento de estado emite uma notificação que o estado foi atualizado;
 Card recebe o estado do model e atualiza a tela;
